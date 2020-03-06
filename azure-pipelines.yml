@@ -17,7 +17,7 @@ jobs:
   condition: succeeded()
   variables:
     scheme: 'iSmartForm'
-    sdk: 'iphoneos'
+    sdk: 'iphonesimulator13.1'
     configuration: 'AppStore'
   steps:
   - task: InstallAppleCertificate@2
