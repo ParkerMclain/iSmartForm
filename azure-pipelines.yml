@@ -20,7 +20,17 @@ jobs:
     sdk: 'iphoneos'
     configuration: 'AppStore'
   steps:
-  # - task: InstallAppleCertificate@2
+    - script: gem install bundler
+    - script: bundle install
+    - script: fastlane build_appstore build_number:1
+      env:
+          DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
+    - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
+      artifact: 'iSmartForm'
+
+
+# Attempt at not using fastfile - issues with signing - revisit
+ # - task: InstallAppleCertificate@2
   #   inputs:
   #     certSecureFile: 'DistCert.p12'
   #     certPwd: $(P12Password)
@@ -53,12 +63,3 @@ jobs:
   #   inputs:
   #     contents: '**/*.ipa'
   #     targetFolder: '$(build.artifactStagingDirectory)'
-
-  # steps:
-    - script: gem install bundler
-    - script: bundle install
-    - script: fastlane build_appstore build_number:1
-      env:
-          DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
-    - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
-      artifact: 'iSmartForm'
