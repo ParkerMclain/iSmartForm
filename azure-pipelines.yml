@@ -29,7 +29,6 @@ jobs:
       provProfileSecureFile: 'iSmartForm__Prod.mobileprovision'
   - task: Xcode@5
     inputs:
-      sdk: '$(sdk)'
       scheme: '$(scheme)'
       configuration: '$(configuration)'
       xcodeVersion: 'default'
