@@ -16,7 +16,7 @@ jobs:
     vmImage: 'macOS-latest'
   condition: succeeded()
   variables:
-    - group: 'iSmartFormKeys'
+    - group: iSmartFormKeys
   steps:
     - script: gem install bundler
     - script: bundle install
