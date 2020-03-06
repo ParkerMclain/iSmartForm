@@ -44,6 +44,7 @@ jobs:
       scheme: '$(scheme)'
       configuration: '$(configuration)'
       xcodeVersion: 'default'
+      xcWorkspacePath: '**/iSmartForm.xcworkspace'
       exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
       packageApp: true
   - task: CopyFiles@2
