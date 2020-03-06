@@ -27,6 +27,8 @@ jobs:
   - task: InstallAppleProvisioningProfile@1
     inputs:
       provProfileSecureFile: 'iSmartForm__Prod.mobileprovision'
+  - script: gem install bundler
+  - script: bundle install
   # - script: gem install bundler
   # - script: bundle install
   # - script: fastlane build_appstore build_number:1
