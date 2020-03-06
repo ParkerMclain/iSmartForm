@@ -20,45 +20,45 @@ jobs:
     sdk: 'iphoneos'
     configuration: 'AppStore'
   steps:
-  - task: InstallAppleCertificate@2
-    inputs:
-      certSecureFile: 'DistCert.p12'
-      certPwd: $(P12Password)
-  - task: InstallAppleProvisioningProfile@1
-    inputs:
-      provProfileSecureFile: 'iSmartForm__Prod.mobileprovision'
-  - script: gem install bundler
-  - script: bundle install
-  - task: CocoaPods@0
-    inputs:
-      forceRepoUpdate: true
-      projectDirectory: '$(system.defaultWorkingDirectory)'
-    displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
+  # - task: InstallAppleCertificate@2
+  #   inputs:
+  #     certSecureFile: 'DistCert.p12'
+  #     certPwd: $(P12Password)
+  # - task: InstallAppleProvisioningProfile@1
+  #   inputs:
+  #     provProfileSecureFile: 'iSmartForm__Prod.mobileprovision'
+  # - script: gem install bundler
+  # - script: bundle install
+  # - task: CocoaPods@0
+  #   inputs:
+  #     forceRepoUpdate: true
+  #     projectDirectory: '$(system.defaultWorkingDirectory)'
+  #   displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
   # - script: fastlane build_appstore build_number:1
   #   env:
   #       DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
   # - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
   #   artifact: 'iSmartForm'
-  - task: Xcode@5
-    inputs:
-      scheme: '$(scheme)'
-      configuration: '$(configuration)'
-      xcodeVersion: 'default'
-      exportTeamId: 5HNM8PG7H4
-      signingOption: default
-      xcWorkspacePath: '**/iSmartForm.xcworkspace'
-      exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-      packageApp: true
-  - task: CopyFiles@2
-    inputs:
-      contents: '**/*.ipa'
-      targetFolder: '$(build.artifactStagingDirectory)'
+  # - task: Xcode@5
+  #   inputs:
+  #     scheme: '$(scheme)'
+  #     configuration: '$(configuration)'
+  #     xcodeVersion: 'default'
+  #     exportTeamId: 5HNM8PG7H4
+  #     signingOption: default
+  #     xcWorkspacePath: '**/iSmartForm.xcworkspace'
+  #     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+  #     packageApp: true
+  # - task: CopyFiles@2
+  #   inputs:
+  #     contents: '**/*.ipa'
+  #     targetFolder: '$(build.artifactStagingDirectory)'
 
   # steps:
-  #   - script: gem install bundler
-  #   - script: bundle install
-  #   - script: fastlane build_appstore build_number:1
-  #     env:
-  #         DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
-  #   - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
-  #     artifact: 'iSmartForm'
+    - script: gem install bundler
+    - script: bundle install
+    - script: fastlane build_appstore build_number:1
+      env:
+          DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
+    - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
+      artifact: 'iSmartForm'
