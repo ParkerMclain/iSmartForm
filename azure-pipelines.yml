@@ -9,14 +9,12 @@
 #       - develop
 
 variables:
-  - group: FTSKeys
+  - group: iSmartFormKeys
 jobs: 
 - job: iOS_Release
   pool:
     vmImage: 'macOS-latest'
   condition: succeeded()
-  variables:
-    - group: iSmartFormKeys
   steps:
     - script: gem install bundler
     - script: bundle install
