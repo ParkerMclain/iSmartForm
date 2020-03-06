@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E9323B948A1C6E68D0EF0F4 /* Pods_iSmartForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115CE1F48C1C425C17687276 /* Pods_iSmartForm.framework */; };
 		92B040112411892C00FB6D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040102411892C00FB6D2C /* AppDelegate.swift */; };
 		92B040132411892C00FB6D2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040122411892C00FB6D2C /* ViewController.swift */; };
 		92B040152411892C00FB6D2C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 92B040142411892C00FB6D2C /* Experience.rcproject */; };
@@ -17,6 +18,8 @@
 		92B040332411892E00FB6D2C /* iSmartFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040322411892E00FB6D2C /* iSmartFormUITests.swift */; };
 		92C99E152412A5A4009E13F6 /* profiles in Resources */ = {isa = PBXBuildFile; fileRef = 92C99E142412A5A4009E13F6 /* profiles */; };
 		92D6CD4824119CAD00B45A90 /* character in Resources */ = {isa = PBXBuildFile; fileRef = 92D6CD4724119CAC00B45A90 /* character */; };
+		C41BA69D63CF0493706CF239 /* Pods_iSmartForm_iSmartFormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E174E7F1886567C74A46FA /* Pods_iSmartForm_iSmartFormUITests.framework */; };
+		DE26DC71A6B3193FD909A705 /* Pods_iSmartFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796EA55AE1901E5ABF97C26F /* Pods_iSmartFormTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115CE1F48C1C425C17687276 /* Pods_iSmartForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSmartForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		117D897FB856794677FFF8D1 /* Pods-iSmartFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartFormTests.release.xcconfig"; path = "Target Support Files/Pods-iSmartFormTests/Pods-iSmartFormTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E173486DE7F0FEC1B4C85E1 /* Pods-iSmartForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartForm.debug.xcconfig"; path = "Target Support Files/Pods-iSmartForm/Pods-iSmartForm.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA6CF049B783460A46BB9B3 /* Pods-iSmartForm-iSmartFormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartForm-iSmartFormUITests.release.xcconfig"; path = "Target Support Files/Pods-iSmartForm-iSmartFormUITests/Pods-iSmartForm-iSmartFormUITests.release.xcconfig"; sourceTree = "<group>"; };
+		796EA55AE1901E5ABF97C26F /* Pods_iSmartFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSmartFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F936C121E4E74739D7659C7 /* Pods-iSmartForm.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartForm.appstore.xcconfig"; path = "Target Support Files/Pods-iSmartForm/Pods-iSmartForm.appstore.xcconfig"; sourceTree = "<group>"; };
+		8E3AB8E63B78E14C1C5A6AF7 /* Pods-iSmartForm-iSmartFormUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartForm-iSmartFormUITests.appstore.xcconfig"; path = "Target Support Files/Pods-iSmartForm-iSmartFormUITests/Pods-iSmartForm-iSmartFormUITests.appstore.xcconfig"; sourceTree = "<group>"; };
+		924AFBA94076B81DBD091A17 /* Pods-iSmartForm-iSmartFormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartForm-iSmartFormUITests.debug.xcconfig"; path = "Target Support Files/Pods-iSmartForm-iSmartFormUITests/Pods-iSmartForm-iSmartFormUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		92B0400D2411892C00FB6D2C /* iSmartForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSmartForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B040102411892C00FB6D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B040122411892C00FB6D2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,10 @@
 		92B040342411892E00FB6D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C99E142412A5A4009E13F6 /* profiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = profiles; sourceTree = "<group>"; };
 		92D6CD4724119CAC00B45A90 /* character */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = character; sourceTree = SOURCE_ROOT; };
+		A3E174E7F1886567C74A46FA /* Pods_iSmartForm_iSmartFormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSmartForm_iSmartFormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCDD27164FA47D8AE7BD956 /* Pods-iSmartFormTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartFormTests.appstore.xcconfig"; path = "Target Support Files/Pods-iSmartFormTests/Pods-iSmartFormTests.appstore.xcconfig"; sourceTree = "<group>"; };
+		E10FB17F3840033CD8CFF53F /* Pods-iSmartForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartForm.release.xcconfig"; path = "Target Support Files/Pods-iSmartForm/Pods-iSmartForm.release.xcconfig"; sourceTree = "<group>"; };
+		FB2F6FDE76561550E7A3EF53 /* Pods-iSmartFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSmartFormTests.debug.xcconfig"; path = "Target Support Files/Pods-iSmartFormTests/Pods-iSmartFormTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9323B948A1C6E68D0EF0F4 /* Pods_iSmartForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE26DC71A6B3193FD909A705 /* Pods_iSmartFormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41BA69D63CF0493706CF239 /* Pods_iSmartForm_iSmartFormUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +106,8 @@
 				92B040262411892E00FB6D2C /* iSmartFormTests */,
 				92B040312411892E00FB6D2C /* iSmartFormUITests */,
 				92B0400E2411892C00FB6D2C /* Products */,
+				A0095CAD3C2B2E3C4463496B /* Pods */,
+				C7095DADFA9C465E06467D6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +154,33 @@
 			path = iSmartFormUITests;
 			sourceTree = "<group>";
 		};
+		A0095CAD3C2B2E3C4463496B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E173486DE7F0FEC1B4C85E1 /* Pods-iSmartForm.debug.xcconfig */,
+				E10FB17F3840033CD8CFF53F /* Pods-iSmartForm.release.xcconfig */,
+				7F936C121E4E74739D7659C7 /* Pods-iSmartForm.appstore.xcconfig */,
+				924AFBA94076B81DBD091A17 /* Pods-iSmartForm-iSmartFormUITests.debug.xcconfig */,
+				3DA6CF049B783460A46BB9B3 /* Pods-iSmartForm-iSmartFormUITests.release.xcconfig */,
+				8E3AB8E63B78E14C1C5A6AF7 /* Pods-iSmartForm-iSmartFormUITests.appstore.xcconfig */,
+				FB2F6FDE76561550E7A3EF53 /* Pods-iSmartFormTests.debug.xcconfig */,
+				117D897FB856794677FFF8D1 /* Pods-iSmartFormTests.release.xcconfig */,
+				BBCDD27164FA47D8AE7BD956 /* Pods-iSmartFormTests.appstore.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7095DADFA9C465E06467D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				115CE1F48C1C425C17687276 /* Pods_iSmartForm.framework */,
+				A3E174E7F1886567C74A46FA /* Pods_iSmartForm_iSmartFormUITests.framework */,
+				796EA55AE1901E5ABF97C26F /* Pods_iSmartFormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B040372411892E00FB6D2C /* Build configuration list for PBXNativeTarget "iSmartForm" */;
 			buildPhases = (
+				9B423A3D7C3581C77D2899CE /* [CP] Check Pods Manifest.lock */,
 				92B040092411892C00FB6D2C /* Sources */,
 				92B0400A2411892C00FB6D2C /* Frameworks */,
 				92B0400B2411892C00FB6D2C /* Resources */,
@@ -158,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B0403A2411892E00FB6D2C /* Build configuration list for PBXNativeTarget "iSmartFormTests" */;
 			buildPhases = (
+				22221746D86C1DB20B2BFF91 /* [CP] Check Pods Manifest.lock */,
 				92B0401F2411892E00FB6D2C /* Sources */,
 				92B040202411892E00FB6D2C /* Frameworks */,
 				92B040212411892E00FB6D2C /* Resources */,
@@ -176,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B0403D2411892E00FB6D2C /* Build configuration list for PBXNativeTarget "iSmartFormUITests" */;
 			buildPhases = (
+				A6A166A3013947A8F9285C52 /* [CP] Check Pods Manifest.lock */,
 				92B0402A2411892E00FB6D2C /* Sources */,
 				92B0402B2411892E00FB6D2C /* Frameworks */,
 				92B0402C2411892E00FB6D2C /* Resources */,
@@ -261,6 +311,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22221746D86C1DB20B2BFF91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iSmartFormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B423A3D7C3581C77D2899CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iSmartForm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A166A3013947A8F9285C52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iSmartForm-iSmartFormUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92B040092411892C00FB6D2C /* Sources */ = {
@@ -440,6 +559,7 @@
 		};
 		92B040382411892E00FB6D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E173486DE7F0FEC1B4C85E1 /* Pods-iSmartForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -460,6 +580,7 @@
 		};
 		92B040392411892E00FB6D2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10FB17F3840033CD8CFF53F /* Pods-iSmartForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -480,6 +601,7 @@
 		};
 		92B0403B2411892E00FB6D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2F6FDE76561550E7A3EF53 /* Pods-iSmartFormTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +624,7 @@
 		};
 		92B0403C2411892E00FB6D2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117D897FB856794677FFF8D1 /* Pods-iSmartFormTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +647,7 @@
 		};
 		92B0403E2411892E00FB6D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924AFBA94076B81DBD091A17 /* Pods-iSmartForm-iSmartFormUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +668,7 @@
 		};
 		92B0403F2411892E00FB6D2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA6CF049B783460A46BB9B3 /* Pods-iSmartForm-iSmartFormUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +743,7 @@
 		};
 		92B040AD2411952B00FB6D2C /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F936C121E4E74739D7659C7 /* Pods-iSmartForm.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -638,6 +764,7 @@
 		};
 		92B040AE2411952B00FB6D2C /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCDD27164FA47D8AE7BD956 /* Pods-iSmartFormTests.appstore.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,6 +787,7 @@
 		};
 		92B040AF2411952B00FB6D2C /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3AB8E63B78E14C1C5A6AF7 /* Pods-iSmartForm-iSmartFormUITests.appstore.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
