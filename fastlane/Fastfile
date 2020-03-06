@@ -21,6 +21,8 @@ fastlane_require 'erb'
 $asc_username = "parkermclain94@gmail.com"
 $workspace = "iSmartForm.xcworkspace"
 
+xcversion(version: "11.3.1") # Selects Xcode 8.1.0
+
 $keychain_name = "iSmartFormKeychain"
 $system_provisioning_path = File.expand_path("~/Library/MobileDevice/Provisioning Profiles")
 $root_dir = File.expand_path(File.join(File.dirname(__FILE__), ".."))
