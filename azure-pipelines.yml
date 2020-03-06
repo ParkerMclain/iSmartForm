@@ -16,7 +16,7 @@ jobs:
     vmImage: 'macOS-latest'
   condition: succeeded()
   variables:
-    scheme: ''
+    scheme: 'iSmartForm'
     sdk: 'iphoneos'
     configuration: 'AppStore'
   steps:
