@@ -17,7 +17,6 @@
 		92B0401D2411892E00FB6D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0401B2411892E00FB6D2C /* LaunchScreen.storyboard */; };
 		92B040282411892E00FB6D2C /* iSmartFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040272411892E00FB6D2C /* iSmartFormTests.swift */; };
 		92B040332411892E00FB6D2C /* iSmartFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040322411892E00FB6D2C /* iSmartFormUITests.swift */; };
-		92C99E152412A5A4009E13F6 /* profiles in Resources */ = {isa = PBXBuildFile; fileRef = 92C99E142412A5A4009E13F6 /* profiles */; };
 		C41BA69D63CF0493706CF239 /* Pods_iSmartForm_iSmartFormUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E174E7F1886567C74A46FA /* Pods_iSmartForm_iSmartFormUITests.framework */; };
 		DE26DC71A6B3193FD909A705 /* Pods_iSmartFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796EA55AE1901E5ABF97C26F /* Pods_iSmartFormTests.framework */; };
 /* End PBXBuildFile section */
@@ -289,7 +288,6 @@
 			files = (
 				929442962412C2910009B18F /* character in Resources */,
 				92B0401D2411892E00FB6D2C /* LaunchScreen.storyboard in Resources */,
-				92C99E152412A5A4009E13F6 /* profiles in Resources */,
 				92B0401A2411892E00FB6D2C /* Assets.xcassets in Resources */,
 				92B040182411892C00FB6D2C /* Main.storyboard in Resources */,
 			);
