@@ -20,24 +20,31 @@ jobs:
     sdk: 'iphonesimulator13.1'
     configuration: 'AppStore'
   steps:
-  - task: InstallAppleCertificate@2
-    inputs:
-      certSecureFile: 'DistCert.p12'
-      certPwd: $(P12Password)
-  - task: InstallAppleProvisioningProfile@1
-    inputs:
-      provProfileSecureFile: 'iSmartForm__Prod.mobileprovision'
-  - task: Xcode@5
-    inputs:
-      scheme: '$(scheme)'
-      configuration: '$(configuration)'
-      xcodeVersion: 'default'
-      exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-      packageApp: false
-  - task: CopyFiles@2
-    inputs:
-      contents: '**/*.ipa'
-      targetFolder: '$(build.artifactStagingDirectory)'
+  # - task: InstallAppleCertificate@2
+  #   inputs:
+  #     certSecureFile: 'DistCert.p12'
+  #     certPwd: $(P12Password)
+  # - task: InstallAppleProvisioningProfile@1
+  #   inputs:
+  #     provProfileSecureFile: 'iSmartForm__Prod.mobileprovision'
+  - script: gem install bundler
+  - script: bundle install
+  - script: fastlane build_appstore build_number:1
+    env:
+        DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
+  - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
+    artifact: 'iSmartForm'
+  # - task: Xcode@5
+  #   inputs:
+  #     scheme: '$(scheme)'
+  #     configuration: '$(configuration)'
+  #     xcodeVersion: 'default'
+  #     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+  #     packageApp: false
+  # - task: CopyFiles@2
+  #   inputs:
+  #     contents: '**/*.ipa'
+  #     targetFolder: '$(build.artifactStagingDirectory)'
 
   # steps:
   #   - script: gem install bundler
