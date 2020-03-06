@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+# trigger:
+#   branches:
+#     include:
+#       - develop
+
+variables:
+  - group: FTSKeys
+jobs: 
+- job: iOS_Release
+  pool:
+    vmImage: 'macOS-latest'
+  condition: succeeded()
+  variables:
+    - group: 'iSmartFormKeys'
+  steps:
+    - script: gem install bundler
+    - script: bundle install
+    - script: fastlane build_appstore build_number:1
+      env:
+          DIST_P12_PASSWORD: $(DIST_P12_PASSWORD)
+    - publish: $(System.DefaultWorkingDirectory)/artifacts/builds/appstore
+      artifact: 'iSmartForm'
