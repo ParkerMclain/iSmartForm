@@ -15,6 +15,7 @@
 		92B0401D2411892E00FB6D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0401B2411892E00FB6D2C /* LaunchScreen.storyboard */; };
 		92B040282411892E00FB6D2C /* iSmartFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040272411892E00FB6D2C /* iSmartFormTests.swift */; };
 		92B040332411892E00FB6D2C /* iSmartFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040322411892E00FB6D2C /* iSmartFormUITests.swift */; };
+		92C99E152412A5A4009E13F6 /* profiles in Resources */ = {isa = PBXBuildFile; fileRef = 92C99E142412A5A4009E13F6 /* profiles */; };
 		92D6CD4824119CAD00B45A90 /* character in Resources */ = {isa = PBXBuildFile; fileRef = 92D6CD4724119CAC00B45A90 /* character */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		92B0402E2411892E00FB6D2C /* iSmartFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSmartFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B040322411892E00FB6D2C /* iSmartFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSmartFormUITests.swift; sourceTree = "<group>"; };
 		92B040342411892E00FB6D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C99E142412A5A4009E13F6 /* profiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = profiles; sourceTree = "<group>"; };
 		92D6CD4724119CAC00B45A90 /* character */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = character; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 		92B040042411892C00FB6D2C = {
 			isa = PBXGroup;
 			children = (
+				92C99E142412A5A4009E13F6 /* profiles */,
 				92B0400F2411892C00FB6D2C /* iSmartForm */,
 				92B040262411892E00FB6D2C /* iSmartFormTests */,
 				92B040312411892E00FB6D2C /* iSmartFormUITests */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B0401D2411892E00FB6D2C /* LaunchScreen.storyboard in Resources */,
+				92C99E152412A5A4009E13F6 /* profiles in Resources */,
 				92B0401A2411892E00FB6D2C /* Assets.xcassets in Resources */,
 				92D6CD4824119CAD00B45A90 /* character in Resources */,
 				92B040182411892C00FB6D2C /* Main.storyboard in Resources */,
