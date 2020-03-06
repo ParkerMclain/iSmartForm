@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6E9323B948A1C6E68D0EF0F4 /* Pods_iSmartForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115CE1F48C1C425C17687276 /* Pods_iSmartForm.framework */; };
-		929442952412C23B0009B18F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 92B040142411892C00FB6D2C /* Experience.rcproject */; };
 		929442962412C2910009B18F /* character in Resources */ = {isa = PBXBuildFile; fileRef = 92D6CD4724119CAC00B45A90 /* character */; };
 		92B040112411892C00FB6D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040102411892C00FB6D2C /* AppDelegate.swift */; };
 		92B040132411892C00FB6D2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B040122411892C00FB6D2C /* ViewController.swift */; };
@@ -50,7 +49,6 @@
 		92B0400D2411892C00FB6D2C /* iSmartForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSmartForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B040102411892C00FB6D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B040122411892C00FB6D2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92B040142411892C00FB6D2C /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		92B040172411892C00FB6D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92B040192411892E00FB6D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B0401C2411892E00FB6D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				92D6CD4724119CAC00B45A90 /* character */,
 				92B040102411892C00FB6D2C /* AppDelegate.swift */,
 				92B040122411892C00FB6D2C /* ViewController.swift */,
-				92B040142411892C00FB6D2C /* Experience.rcproject */,
 				92B040162411892C00FB6D2C /* Main.storyboard */,
 				92B040192411892E00FB6D2C /* Assets.xcassets */,
 				92B0401B2411892E00FB6D2C /* LaunchScreen.storyboard */,
@@ -385,7 +382,6 @@
 			files = (
 				92B040132411892C00FB6D2C /* ViewController.swift in Sources */,
 				92B040112411892C00FB6D2C /* AppDelegate.swift in Sources */,
-				929442952412C23B0009B18F /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
