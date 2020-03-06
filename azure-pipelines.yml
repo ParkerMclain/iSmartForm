@@ -44,7 +44,8 @@ jobs:
       scheme: '$(scheme)'
       configuration: '$(configuration)'
       xcodeVersion: 'default'
-      exportTeamId: '5HNM8PG7H4'
+      exportTeamId: 5HNM8PG7H4
+      signingOption: default
       xcWorkspacePath: '**/iSmartForm.xcworkspace'
       exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
       packageApp: true
