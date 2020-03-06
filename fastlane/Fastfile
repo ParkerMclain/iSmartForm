@@ -19,6 +19,7 @@ fastlane_require 'yaml'
 fastlane_require 'erb'
 
 $asc_username = "parkermclain94@gmail.com"
+$workspace = "iSmartForm.xcworkspace"
 
 $keychain_name = "iSmartFormKeychain"
 $system_provisioning_path = File.expand_path("~/Library/MobileDevice/Provisioning Profiles")
@@ -35,7 +36,7 @@ before_all do |lane, options|
   end
   options[:profiles_glob] = File.join("#{$root_dir}/**/profiles/**", "*.mobileprovision")
 
-  if lane == :ios_appstore || lane == :ios_appstore_no_upload || lane == :ios_testflight
+  if lane == :ios_appstore || lane == :build_appstore || lane == :ios_testflight
     options[:is_appstore] = true
   else
     options[:is_appstore] = false
@@ -174,7 +175,7 @@ lane :build_appstore do |options|
      configuration: configuration,
      output_directory: output_dir,
      archive_path: output_dir,
-     skip_profile_detection: options[:is_fts],
+     skip_profile_detection: true,
      buildlog_path: "#{$root_dir}/artifacts/logs/gym",
      xcargs: "-UseModernBuildSystem=YES",
      export_options: {
