@@ -17,8 +17,10 @@ class ViewController: UIViewController, ARSessionDelegate {
     
     // The 3D character to display.
     var character: BodyTrackedEntity?
-    let characterOffset: SIMD3<Float> = [-1.0, 0, 0] // Offset the character by one meter to the left
-    let characterAnchor = AnchorEntity()
+    var box: ModelEntity?
+    let characterOffset: SIMD3<Float> = [0, 0, 0]
+    
+    let hip = AnchorEntity()
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -34,44 +36,40 @@ class ViewController: UIViewController, ARSessionDelegate {
         let configuration = ARBodyTrackingConfiguration()
         arView.session.run(configuration)
         
-        arView.scene.addAnchor(characterAnchor)
+        let box1 = MeshResource.generateBox(size: 0.06)
+        let entity1 = ModelEntity(mesh: box1)
+        self.box = entity1
         
-        // Asynchronously load the 3D character.
-        var cancellable: AnyCancellable? = nil
-        cancellable = Entity.loadBodyTrackedAsync(named: "character/robot").sink(
-            receiveCompletion: { completion in
-                if case let .failure(error) = completion {
-                    print("Error: Unable to load model: \(error.localizedDescription)")
-                }
-                cancellable?.cancel()
-        }, receiveValue: { (character: Entity) in
-            if let character = character as? BodyTrackedEntity {
-                // Scale the character to human size
-                character.scale = [1.0, 1.0, 1.0]
-                self.character = character
-                cancellable?.cancel()
-            } else {
-                print("Error: Unable to load model as BodyTrackedEntity")
-            }
-        })
+        arView.scene.addAnchor(hip)
     }
     
     func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
         for anchor in anchors {
             guard let bodyAnchor = anchor as? ARBodyAnchor else { continue }
+            // Access to the position of root node
+            let hipWorldPosition = bodyAnchor.transform
+            // Accessing the Skeleton Geometry
+            let skeleton = bodyAnchor.skeleton
+            // Accessing list of transforms of all joints relative to root
+            let jointTransforms = skeleton.jointModelTransforms
             
-            // Update the position of the character anchor's position.
-            let bodyPosition = simd_make_float3(bodyAnchor.transform.columns.3)
-            characterAnchor.position = bodyPosition + characterOffset
-            // Also copy over the rotation of the body anchor, because the skeleton's pose
-            // in the world is relative to the body anchor's rotation.
-            characterAnchor.orientation = Transform(matrix: bodyAnchor.transform).rotation
+            // Set root box
+            let bodyPosition = simd_make_float3(hipWorldPosition.columns.3)
+            hip.position = bodyPosition
+            hip.orientation = Transform(matrix: hipWorldPosition).rotation
+            if let box = box, box.parent == nil {
+                hip.addChild(box)
+                print("A12: The box has been added ...")
+            }
             
-            if let character = character, character.parent == nil {
-                // Attach the character to its anchor as soon as
-                // 1. the body anchor was detected and
-                // 2. the character was loaded.
-                characterAnchor.addChild(character)
+            // Iterating over All joints
+            for(i, jointTransform) in jointTransforms.enumerated() {
+                // Extract parent index from definition
+                let parentIndex = skeleton.definition.parentIndices[i]
+                // Check if it's not root
+                guard parentIndex != -1 else { continue }
+                // Find position of parent joint
+                let parentJointTransform = jointTransforms[parentIndex]
             }
         }
     }
